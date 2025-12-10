@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: myclub
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/myclub?useSSL=false&serverTimezone=UTC
+    username: root
+    password: ton_mdp
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update        # crée/maj les tables automatiquement depuis les entités Java
+    show-sql: true            # affiche les requêtes SQL dans la console
+    properties:
+      hibernate:
+        format_sql: true       # formate joliment le SQL affiché
+    database-platform: org.hibernate.dialect.MySQL8Dialect  # dialecte MySQL
+
+server:
+  port: 8080
