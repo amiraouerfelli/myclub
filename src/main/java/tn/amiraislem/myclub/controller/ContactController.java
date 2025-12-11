@@ -9,7 +9,6 @@ import tn.amiraislem.myclub.service.ContactService;
 
 @RestController
 @RequestMapping("/api/contacts")
-@RequiredArgsConstructor
 @CrossOrigin(origins = "*")
 public class ContactController {
 

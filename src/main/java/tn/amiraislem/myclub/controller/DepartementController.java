@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.*;
 import tn.amiraislem.myclub.entity.Departement;
 import tn.amiraislem.myclub.service.DepartementService;
 
-@RequiredArgsConstructor
 @RestController
 @RequestMapping("/api/departements")
 public class DepartementController {

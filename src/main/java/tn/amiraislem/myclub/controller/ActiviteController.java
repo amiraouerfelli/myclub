@@ -13,7 +13,6 @@ import java.util.Set;
 
 @RestController
 @RequestMapping("/api/activites")
-@RequiredArgsConstructor
 public class ActiviteController {
 
     private final ActiviteService activiteService;

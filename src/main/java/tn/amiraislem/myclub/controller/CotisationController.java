@@ -9,7 +9,6 @@ import tn.amiraislem.myclub.service.CotisationService;
 
 @RestController
 @RequestMapping("/api/cotisations")
-@RequiredArgsConstructor
 @CrossOrigin(origins = "*")
 public class CotisationController {
 

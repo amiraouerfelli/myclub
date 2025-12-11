@@ -10,7 +10,6 @@ import tn.amiraislem.myclub.service.MembreService;
 
 @RestController
 @RequestMapping("/api/membres")
-@RequiredArgsConstructor
 @CrossOrigin("*")
 public class MembreController {
 

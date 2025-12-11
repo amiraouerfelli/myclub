@@ -5,7 +5,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/myclub?useSSL=false&serverTimezone=UTC
     username: root
-    password: ton_mdp
+    password: Amira_2025
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:

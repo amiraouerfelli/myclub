@@ -9,7 +9,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/parametres")
-@RequiredArgsConstructor
 public class ParametresController {
 
     private final ParametresService parametresService;
