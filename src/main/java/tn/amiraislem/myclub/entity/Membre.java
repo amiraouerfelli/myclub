@@ -65,8 +65,9 @@ public class Membre {
     private List<Cotisation> cotisations = new ArrayList<>();
 
     @NotNull
-    @Column(nullable = false)
+    @Column(nullable = true)
     private LocalDateTime createdAt;
+
 
     private LocalDateTime updatedAt;
 

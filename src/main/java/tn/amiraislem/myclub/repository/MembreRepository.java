@@ -27,8 +27,13 @@ public interface MembreRepository extends JpaRepository<Membre, Long> {
     // --------------------------
     // 🔗 GESTION DES RELATIONS
     // --------------------------
-    @Query("SELECT m.evenements FROM Membre m WHERE m.id = :membreId")
+    @Query(
+            value = "SELECT e FROM Membre m JOIN m.evenementsInscrits e WHERE m.id = :membreId",
+            countQuery = "SELECT COUNT(e) FROM Membre m JOIN m.evenementsInscrits e WHERE m.id = :membreId"
+    )
     Page<Evenement> findEvenementsByMembre(@Param("membreId") Long membreId, Pageable pageable);
+
+
 
     // --------------------------
     //  FILTRES
